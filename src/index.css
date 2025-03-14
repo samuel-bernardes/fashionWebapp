@@ -1,0 +1,95 @@
+/* index.css */
+@import "tailwindcss";
+
+html,
+body {
+    height: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Definir estilos básicos de tipografia */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+@theme {
+    --breakpoint-*: initial;
+    --breakpoint-sm: 480px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 976px;
+    --breakpoint-xl: 1440px;
+
+    --color-primary: #7B1FA2;
+    /* Roxo principal */
+    --color-primary-dark: #4A148C;
+    /* Roxo mais escuro */
+    --color-primary-light: #9575CD;
+    /* Roxo mais claro */
+    --color-secondary: #121212;
+    /* Preto puxado para dark */
+    --color-secondary-dark: #1E1E1E;
+    /* Cinza escuro */
+    --color-secondary-light: #2A2A2A;
+    /* Cinza médio para destaque */
+    --color-text: #E0E0E0;
+    /* Texto principal */
+    --color-text-dark: #BDBDBD;
+    /* Texto menos destacado */
+    --color-accent: #FF80AB;
+    /* Rosa vibrante para detalhes */
+}
+
+:root {
+    font-family: 'Poppins', 'sans-serif';
+    line-height: 1.5;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Aplicando as cores ao Tailwind */
+@layer base {
+    :root {
+        --tw-color-primary: var(--color-primary);
+        --tw-color-primary-dark: var(--color-primary-dark);
+        --tw-color-primary-light: var(--color-primary-light);
+        --tw-color-secondary: var(--color-secondary);
+        --tw-color-secondary-dark: var(--color-secondary-dark);
+        --tw-color-secondary-light: var(--color-secondary-light);
+        --tw-color-text: var(--color-text);
+        --tw-color-text-dark: var(--color-text-dark);
+        --tw-color-accent: var(--color-accent);
+    }
+}
