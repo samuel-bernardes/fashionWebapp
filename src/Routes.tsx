@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Home } from './pages';
+import { Gallery, Home, Products } from './pages';
 import { Layout } from './components';
 
 function Routes() {
@@ -23,6 +23,14 @@ function Routes() {
                 {
                     path: '/',
                     element: <Home />,
+                },
+                {
+                    path: '/produtos',
+                    element: <Products />,
+                },
+                {
+                    path: '/galeria',
+                    element: <Gallery />,
                 },
             ],
         },
