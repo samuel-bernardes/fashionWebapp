@@ -39,7 +39,7 @@ function Header() {
                     <a href="#" className="text-sm/6 font-semibold">
                         Contato
                     </a>
-                    <a href="#" className="text-sm/6 font-semibold">
+                    <a href="/sobre" className="text-sm/6 font-semibold">
                         Sobre
                     </a>
                 </PopoverGroup>
@@ -80,7 +80,7 @@ function Header() {
                                     Contato
                                 </a>
                                 <a
-                                    href="#"
+                                    href="/sobre"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-secondary-light"
                                 >
                                     Sobre

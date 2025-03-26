@@ -2,19 +2,6 @@ import { LogoBrancaHorizontal } from "../../assets";
 
 const navigation = [
     {
-        name: 'Facebook',
-        href: '#',
-        icon: (props: any) => (
-            <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-                <path
-                    fillRule="evenodd"
-                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                    clipRule="evenodd"
-                />
-            </svg>
-        ),
-    },
-    {
         name: 'Instagram',
         href: 'https://www.instagram.com/emilly.ferreira12/',
         icon: (props: any) => (
@@ -28,11 +15,15 @@ const navigation = [
         ),
     },
     {
-        name: 'X',
-        href: '#',
+        name: 'TikTok',
+        href: 'https://www.tiktok.com/@emilly.ferreira12',
         icon: (props: any) => (
             <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-                <path d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
+                <path
+                    clipRule="evenodd"
+                    d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z"
+                    fillRule="evenodd"
+                />
             </svg>
         ),
     },

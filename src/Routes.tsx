@@ -2,8 +2,9 @@ import { useEffect } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Gallery, Home, Products } from './pages';
+import { About, Gallery, Home, ProductDetail, Products } from './pages';
 import { Layout } from './components';
+import { PhotoProvider } from 'react-photo-view';
 
 function Routes() {
 
@@ -29,8 +30,16 @@ function Routes() {
                     element: <Products />,
                 },
                 {
+                    path: '/produtos/:product',
+                    element: <ProductDetail />,
+                },
+                {
                     path: '/galeria',
-                    element: <Gallery />,
+                    element: <Gallery />
+                },
+                {
+                    path: '/sobre',
+                    element: <About />,
                 },
             ],
         },

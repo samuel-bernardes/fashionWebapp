@@ -1,4 +1,9 @@
+import { useNavigate } from "react-router-dom";
+
 function HeroHome() {
+
+    const navigate = useNavigate();
+
     return (
         <div className="relative isolate">
             <svg
@@ -50,12 +55,12 @@ function HeroHome() {
                             </p>
                             <div className="mt-10 flex items-center gap-x-6">
                                 <a
-                                    href="#"
-                                    className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-text shadow-xs hover:bg-primary-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                                    onClick={() => navigate("/produtos")}
+                                    className="cursor-pointer rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-text shadow-xs hover:bg-primary-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                                 >
                                     Conheça nossos produtos
                                 </a>
-                                <a href="#" className="text-sm/6 font-semibold">
+                                <a onClick={() => navigate("/galeria")} className="text-sm/6 font-semibold cursor-pointer">
                                     Veja mais looks <span aria-hidden="true">→</span>
                                 </a>
                             </div>
