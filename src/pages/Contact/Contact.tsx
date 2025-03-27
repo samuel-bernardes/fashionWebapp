@@ -1,9 +1,5 @@
-import { BugAntIcon, CameraIcon, ChatBubbleLeftRightIcon, ComputerDesktopIcon, SparklesIcon } from "@heroicons/react/16/solid";
-import { useState } from "react";
-
+import { BugAntIcon, ChatBubbleLeftRightIcon,SparklesIcon } from "@heroicons/react/16/solid";
 function Contact() {
-
-    const [agreed, setAgreed] = useState(false);
 
     return (
         <div>
@@ -50,7 +46,7 @@ function Contact() {
 
                         <div className="lg:flex-auto max-w-xs mt-24 mx-auto">
                             <a
-                                href="https://wa.me/SEUNUMERO" // Substitua pelo número de WhatsApp
+                                href="https://wa.me/+553175679833/?text=Olá, gostaria de enviar um feedack`" // Substitua pelo número de WhatsApp
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center justify-center gap-2 rounded-md bg-green-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"

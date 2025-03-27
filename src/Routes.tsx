@@ -4,7 +4,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { About, Contact, Gallery, Home, ProductDetail, Products } from './pages';
 import { Layout } from './components';
-import { PhotoProvider } from 'react-photo-view';
 
 function Routes() {
 

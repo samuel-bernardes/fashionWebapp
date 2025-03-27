@@ -2,21 +2,23 @@ import { Dialog, DialogPanel, PopoverGroup } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import { useState } from "react";
 import { LogoBrancaHorizontal } from "../../assets";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const navigate = useNavigate();
 
     return (
         <header className="bg-secondary-dark text-text">
             <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
                 <div className="flex lg:flex-1">
-                    <a href="/" className="-m-1.5 p-1.5">
+                    <button onClick={() => navigate("/")} className="-m-1.5 p-1.5">
                         <img
                             alt=""
                             src={LogoBrancaHorizontal}
                             className="h-12 w-auto"
                         />
-                    </a>
+                    </button>
                 </div>
                 <div className="flex lg:hidden">
                     <button
@@ -28,20 +30,24 @@ function Header() {
                     </button>
                 </div>
                 <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-
-                    <a href="/produtos" className="text-sm/6 font-semibold">
-                        Produtos
-                    </a>
-
-                    <a href="/galeria" className="text-sm/6 font-semibold">
-                        Galeria
-                    </a>
-                    <a href="/contato" className="text-sm/6 font-semibold">
-                        Contato
-                    </a>
-                    <a href="/sobre" className="text-sm/6 font-semibold">
-                        Sobre
-                    </a>
+                    <button onClick={() => navigate("/produtos")}>
+                        <span className="text-sm/6 font-semibold">Produtos</span>
+                    </button>
+                    <button onClick={() => navigate("/galeria")}>
+                        <span className="text-sm/6 font-semibold">
+                            Galeria
+                        </span>
+                    </button>
+                    <button onClick={() => navigate("/contato")}>
+                        <span className="text-sm/6 font-semibold">
+                            Contato
+                        </span>
+                    </button>
+                    <button onClick={() => navigate("/sobre")}>
+                        <span className="text-sm/6 font-semibold">
+                            Sobre
+                        </span>
+                    </button>
                 </PopoverGroup>
             </nav>
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden text-text">
@@ -58,33 +64,26 @@ function Header() {
                     </div>
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-500/10">
-                            <div className="space-y-2 py-6">
+                            <div className="space-y-2 py-6 flex flex-col items-start">
 
-                                <a
-                                    href="/produtos"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-secondary-light"
-                                >
-                                    Produtos
-                                </a>
-
-                                <a
-                                    href="/galeria"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-secondary-light"
-                                >
-                                    Galeria
-                                </a>
-                                <a
-                                    href="/contato"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-secondary-light"
-                                >
-                                    Contato
-                                </a>
-                                <a
-                                    href="/sobre"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-secondary-light"
-                                >
-                                    Sobre
-                                </a>
+                                <button onClick={() => navigate("/produtos")} className="w-full">
+                                    <span className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-secondary-light">Produtos</span>
+                                </button>
+                                <button onClick={() => navigate("/galeria")} className="w-full">
+                                    <span className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-secondary-light">
+                                        Galeria
+                                    </span>
+                                </button>
+                                <button onClick={() => navigate("/contato")} className="w-full">
+                                    <span className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-secondary-light">
+                                        Contato
+                                    </span>
+                                </button>
+                                <button onClick={() => navigate("/sobre")} className="w-full">
+                                    <span className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-secondary-light">
+                                        Sobre
+                                    </span>
+                                </button>
                             </div>
                         </div>
                     </div>
