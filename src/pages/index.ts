@@ -3,12 +3,14 @@ import Products from './Products/Products';
 import Gallery from './Gallery/Gallery';
 import ProductDetail from './ProductDetail/ProductDetail';
 import About from './About/About';
+import Contact from './Contact/Contact';
 
 export {
     Home,
     Products,
     Gallery,
     ProductDetail,
-    About
+    About,
+    Contact
     // Add other components here...
 }

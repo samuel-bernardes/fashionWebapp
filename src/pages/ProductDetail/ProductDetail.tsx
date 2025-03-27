@@ -24,22 +24,20 @@ const products = {
         ]
     },
     "acessorio": {
-        name: "Cinto Classic",
+        name: "Acessório Elegante",
         href: "#",
         price: "R$ 180,00",
-        description:
-            "O Cinto Classic é o toque final perfeito para qualquer look. Feito em couro legítimo, ele combina sofisticação e durabilidade, garantindo um ajuste confortável e estiloso para qualquer ocasião.",
-        imageSrc: "https://camilaribas.com.br/uploads/images/202202/img_1920x_620e51d98d0a54-34538461-98967243.jpg",
-        imageAlt: "Cinto de couro legítimo preto com fivela metálica dourada.",
+        description: "Este acessório é a escolha perfeita para complementar qualquer estilo. Com design sofisticado e materiais de alta qualidade, ele une conforto e versatilidade para diversas ocasiões.",
+        imageSrc: "https://nextluxury.com/wp-content/uploads/Top-15-Fashion-Accessories-For-Men-1.jpg",
+        imageAlt: "Acessório elegante em material refinado.",
         breadcrumbs: [
-            { id: 1, name: "Acessórios", href: "#" },
-            { id: 2, name: "Cintos", href: "#" },
+            { id: 1, name: "Moda & Acessórios", "href": "#" },
+            { id: 2, name: "Acessórios", "href": "#" }
         ],
         sizes: [
-            { name: "P", description: "Ideal para cinturas de 70 a 80 cm." },
-            { name: "M", description: "Ajustável para cinturas de 81 a 90 cm." },
-            { name: "G", description: "Perfeito para cinturas de 91 a 100 cm." },
-        ],
+            { name: "Personalizado", description: "Tamanhos variados a depender do produto" },
+
+        ]
     },
     "outros-produtos": {
         name: "Carteira Minimalista",

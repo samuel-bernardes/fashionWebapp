@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { About, Gallery, Home, ProductDetail, Products } from './pages';
+import { About, Contact, Gallery, Home, ProductDetail, Products } from './pages';
 import { Layout } from './components';
 import { PhotoProvider } from 'react-photo-view';
 
@@ -40,6 +40,10 @@ function Routes() {
                 {
                     path: '/sobre',
                     element: <About />,
+                },
+                {
+                    path: '/contato',
+                    element: <Contact />,
                 },
             ],
         },

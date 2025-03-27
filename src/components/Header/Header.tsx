@@ -36,7 +36,7 @@ function Header() {
                     <a href="/galeria" className="text-sm/6 font-semibold">
                         Galeria
                     </a>
-                    <a href="#" className="text-sm/6 font-semibold">
+                    <a href="/contato" className="text-sm/6 font-semibold">
                         Contato
                     </a>
                     <a href="/sobre" className="text-sm/6 font-semibold">
@@ -74,7 +74,7 @@ function Header() {
                                     Galeria
                                 </a>
                                 <a
-                                    href="#"
+                                    href="/contato"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-secondary-light"
                                 >
                                     Contato

@@ -1,32 +1,5 @@
 import { useNavigate } from "react-router-dom";
 
-const perks = [
-    {
-        name: "Entrega segura",
-        imageSrc: "https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-delivery-light.svg",
-        description:
-            "Fazemos entregas para todo o Brasil pelo correios e taxa de frete grátis para pedidos acima do valor mínimo. Receba suas peças favoritas no conforto da sua casa!",
-    },
-    {
-        name: "Qualidade garantida",
-        imageSrc: "https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-warranty-light.svg",
-        description:
-            "Cada peça é feita com materiais selecionados e acabamento impecável. Prezamos pela qualidade para que você tenha roupas duráveis e confortáveis.",
-    },
-    {
-        name: "Trocas e devoluções fáceis",
-        imageSrc: "https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-returns-light.svg",
-        description:
-            "Caso o tamanho não seja o ideal ou você mude de ideia, oferecemos um processo de troca e devolução simples e rápido. Queremos que você fique 100% satisfeito com sua compra!",
-    },
-    {
-        name: "Moda sustentável",
-        imageSrc: "https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-planet-light.svg",
-        description:
-            "Acreditamos em uma moda mais consciente. Sempre que possível, utilizamos tecidos sustentáveis e buscamos reduzir o impacto ambiental de nossa produção.",
-    },
-];
-
 function Products() {
     const navigate = useNavigate();
 
@@ -119,27 +92,6 @@ function Products() {
                         </div>
                     </div>
                 </div>
-
-                {/* Seção de Benefícios */}
-                {/* <div className="bg-secondary-light/50">
-                    <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
-                        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 px-4 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-                            {perks.map((perk) => (
-                                <div key={perk.name} className="sm:flex">
-                                    <div className="sm:shrink-0">
-                                        <div className="flow-root">
-                                            <img alt="" src={perk.imageSrc} className="h-24 w-28" />
-                                        </div>
-                                    </div>
-                                    <div className="mt-3 sm:mt-0 sm:ml-3">
-                                        <h3 className="text-sm font-medium text-text">{perk.name}</h3>
-                                        <p className="mt-2 text-sm text-text-dark">{perk.description}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div> */}
             </main>
         </div>
     );
